@@ -1,5 +1,5 @@
 <?php
-include "$lien.php";
+/*include "$lien.php";
 $length = sizeof($articles);
 
 
@@ -13,7 +13,7 @@ for($i= 0; $i < $length; $i++) {
     $contenu .= $articles[$i][2];
 
 $liste .= "<article><h2>$titre</h2><img src=\"img\ ".$photo."\" alt=\"\"><p>".$contenu."</p></article>";
-}
+}*/
 ?>
 
 
