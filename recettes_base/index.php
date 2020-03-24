@@ -1,5 +1,5 @@
 <?php 
-var_dump ($_GET);
+
 
 $lien = isset($_GET["lien"])? $_GET["lien"] : "accueil";
 
@@ -8,14 +8,41 @@ $lien = isset($_GET["lien"])? $_GET["lien"] : "accueil";
            $page = "recettes/accueil.html";
             break;
         case "entree":
-            $page = "recettes/entree.html";
+            $page = "recettes/entree.php";
             break;
+            case "entree1":
+                $page = "recettes/recette.php";
+                break;
+            case "entree2":
+                $page = "recettes/recette.php";
+                break;
+            case "entree3":
+                $page = "recettes/recette.php";
+                break;
         case "plat":
-            $page = "recettes/plat.html";
+            $page = "recettes/plat.php";
             break;
+            case "plat1":
+                $page = "recettes/recette.php";
+                break;
+            case "plat2":
+                $page = "recettes/recette.php";
+                break;
+            case "plat3":
+                $page = "recettes/recette.php";
+                break;
         case "dessert":
-            $page = "recettes/dessert.html";
+            $page = "recettes/dessert.php";
             break;
+            case "dessert1":
+                $page = "recettes/recette.php";
+                break;
+            case "dessert2":
+                $page = "recettes/recette.php";
+                break;
+            case "dessert3":
+                $page = "recettes/recette.php";
+                break;
         default : $page = "recettes/accueil.html";
     }
 
@@ -35,7 +62,7 @@ $lien = isset($_GET["lien"])? $_GET["lien"] : "accueil";
             <?php require "menu.php"; ?>
         </header>
         
-        
+<?= var_dump($_GET); ?>
 <?php require "$page"; ?>
     </body>
 
